@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-.container {
+.container, .services-page {
   max-width: 880px;
   width: 100%;
   /* TB LR */
@@ -95,11 +95,6 @@ header nav{
 }
 }
 
-
-
-/* End Tablet */
-
-
 header nav a {
   display: inline-block;
   margin-right: 65px;
@@ -107,6 +102,7 @@ header nav a {
   color: gray;
   text-decoration: none;
 }
+
 @media ( max-width: 800px ) {
     header nav a {
         margin: 0 34px;
@@ -128,14 +124,6 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-/* header nav a:first-child {
-  margin-left: 0;
-}
-
-header nav a:last-child {
-  margin-right: 0;
-} */
-
 header .logo {
   display: inline-block;
   margin-top: 25px;
@@ -147,6 +135,8 @@ header .logo {
     
 } 
 }
+
+
 /* cta */
 
 .cta .cta-text {
@@ -308,4 +298,113 @@ footer {
   margin: 32px 0;
   text-align: center;
   font-size: 14px;
+}
+
+@media ( max-width: 800px ){
+    .services-header img{
+        width: 100%;
+    }
+    .services-header {
+        padding: 5%;
+    }
+}
+
+.services-header h1 {
+	font-size: 30pt;
+	margin-top: 40px;
+}
+
+
+.services-article {
+	display: flex;
+	flex-wrap: wrap;
+	/* border: 1px solid blue; */
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 40px 0;
+	padding: 40px 0;
+
+}
+@media ( max-width: 500px ){
+    .services-article {
+        flex-direction: column;
+    }
+}
+
+
+.awesome-box {
+	background-color: lightgray;
+	border: 1px solid black;
+	width: 400px;
+	padding: 20px;
+	margin: 20px;
+}
+@media ( max-width: 800px ){
+    .awesome-box{
+        width: 40%;
+        margin: 5%;
+    }
+}
+@media ( max-width: 500px ){
+    .awesome-box{
+        width: 80%;
+        margin: 5%;
+    }
+}
+
+
+.learn-button {
+	font-size: 15pt;
+	width: 200px;
+	border: 1px solid black;
+	margin: 20px;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+@media ( max-width: 800px )  {
+    .learn-button{
+        width: 80%;
+        margin: 5%;
+        margin-bottom: 0;
+    }
+}
+
+.services-footer {
+	display: flex;
+
+}
+@media ( max-width: 800px ){
+    .services-info-img {
+        max-width: 50%;
+    }
+}
+
+@media ( max-width: 500px ){
+    .services-info-img {
+        /* flex-direction: column; */
+        display: none;
+    }
+}
+
+ul {
+		list-style-type: disc;
+		margin-left:20px;
+}
+
+@media ( max-width: 800px ){
+
+    .services-footer {
+        margin: 5%;
+        padding: 5%;
+    }
+    .footer-left {
+        margin: 5%;
+    }  
 }
